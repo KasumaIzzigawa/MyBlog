@@ -8,22 +8,23 @@ and open the template in the editor.
     Author     : Kasuma
 */
 
-#cheader {
+#cheader #index_header #about_header {
     padding: 10px;
     margin: 5px;
     border-style: none;
     
 }
 
-#clist {
+#clist #blog_1 #about_body{
+    color: white;
     padding: 20px;
     margin: 5px;
     border-style: groove;
-    
+    border-color: lightblue;
 }
 
 body {
-    background-image: url("images/site_background.jpg");
+    background-image: url("images/blogsite_background.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
