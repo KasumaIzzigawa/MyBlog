@@ -8,14 +8,23 @@ and open the template in the editor.
     Author     : Kasuma
 */
 
-#cheader #index_header #about_header {
+h1#cheader, h1#index_header, h1#about_header {
     padding: 10px;
     margin: 5px;
     border-style: none;
     
 }
 
-#clist #blog_1 #about_body{
+ul#clist, p#blog_1 {
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-style: groove;
+    border-color: lightblue;
+}
+
+p#about_body {
+    text-align: center;
     color: white;
     padding: 20px;
     margin: 5px;
