@@ -1,5 +1,5 @@
 <?php
-    require 'database.php';
+    require 'application/database.php';
     
     
     $article_id = 2;
@@ -11,6 +11,6 @@
     $blogs = $db->query($query);
     $blog = $blogs->fetch();
     
-    include 'index.html';
+    include 'application/index.html';
 ?>
 
