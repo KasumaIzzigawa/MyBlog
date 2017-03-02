@@ -22,46 +22,15 @@
     <body>
         <div id="page">
             <!-- This row is for the top navigation bar between pages on the site -->
-            <div class="row">
-                <div class="col-xs-8 col-xs-push-2">
-                    <header>
-                        <nav class="navbar navbar-default">
-                            <div class="container-fluid">
-                                <div class="navbar-header">
-                                    <a class="navbar-brand" href="#"><strong>かすま</strong></a>
-                                </div>
-                                <ul class="nav nav-pills nav-justified">
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="articles.html">Articles</a></li>
-                                    <li><a href="about-me.html">About Me</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </header>
-                </div>
-            </div>
+            <?php
+                include 'navbars/mainNav.html';
+            ?>
             <!-- This row includes the sidebar links and the main content -->
             <div class="row">
                 <!-- Sidebar code -->
-                <div class="col-xs-2">
-                    <nav class="sidenav navbar-default">            
-                        <div class="container-fluid">
-                            <div class="container-fluid">
-                                <div class="navbar-header">
-                                        <a class="navbar-brand" href="#"><strong>Follow Me!</strong></a>
-                                </div>
-                            </div>
-                            <div class="container-fluid">
-                                <ul class ="nav nav-pills nav-stacked">
-                                    <li><a href="https://www.twitch.tv/kasumaizzigawa">Twitch</a></li>
-                                    <li><a href="https://twitter.com/KasumaIzzigawa">Twitter</a></li>
-                                    <li><a href="https://www.youtube.com/user/KasumaIzzigawa">YouTube</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+                <?php
+                    include 'navbars/sideNav.html';
+                ?>
                 <div class="col-xs-8">
                     <h1 id="about_header">About Me</h1>
                     <p id="about_body">Gamer<br />Programmer<br />Cook<br />Airsofter<br /><br />Hey there, name's Kasuma. Welcome to my blogsite! This site is my first
