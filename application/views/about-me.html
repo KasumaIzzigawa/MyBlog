@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contacts</title>
+        <title>About Me</title>
 
         <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/9e171cc04f.js"></script>
@@ -14,31 +14,30 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+        
         <!-- Personal CSS for site -->
-        <link href="<?php echo SITE_URL . '/style/UniCSS.css'; ?>" type="text/css" rel="stylesheet">
+        <link href="<?php echo SITE_URL . '/style/uniCSS.css'; ?>" type="text/css" rel="stylesheet">
         
     </head>
     <body>
         <div id="page">
             <!-- This row is for the top navigation bar between pages on the site -->
             <?php
-                include 'navbars/mainNav.html';
+                include SITE_PATH . '/application/navbars/mainNav.html';
             ?>
             <!-- This row includes the sidebar links and the main content -->
             <div class="row">
                 <!-- Sidebar code -->
                 <?php
-                    include 'navbars/sideNav.html';
+                    include SITE_PATH . '/application/navbars/sideNav.html';
                 ?>
-                <!-- The main body of this page is just a contacts list -->
                 <div class="col-xs-8">
-                    <h1 id="cheader">Contact Me</h1>
-                    <ul id="clist">
-                        <li>Email: <a href="mailto:tony.proeung@gmail.com">tony.proeung@gmail.com</a></li>
-                        <li>My Twitter: <a href="https://twitter.com/KasumaIzzigawa">@KasumaIzzigawa</a></li>
-                        <li>My Twitch: <a href="https://www.twitch.tv/kasumaizzigawa">KasumaIzzigawa</a></li>
-                    </ul>
+                    <h1 id="about_header">About Me</h1>
+                    <p id="about_body">Gamer<br />Programmer<br />Cook<br />Airsofter<br /><br />Hey there, name's Kasuma. Welcome to my blogsite! This site is my first
+                        web design project that I'm using for practice so I can further my skills in web design. However, it's going to be filled with
+                        blogs of my gaming, livestreaming, possible video game reviews, cooking, programming, and airsofting (Hopefully). Might even throw in random
+                        everyday life things.
+                    </p>
                 </div>
             </div>
         </div>

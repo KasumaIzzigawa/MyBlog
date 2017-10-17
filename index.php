@@ -1,8 +1,7 @@
 <?php
-    define('SITE_PATH', 'C:/xampp/htdocs/MyBlog');
-    define('SITE_URL', 'http://localhost/MyBlog');
+    include 'application/controllers/config.php';
     
-    require 'application/database.php';
+    require 'application/controllers/database.php';
     
     
     $article_id = 2;
@@ -14,6 +13,6 @@
     $blogs = $db->query($query);
     $blog = $blogs->fetch();
     
-    include 'application/index.html';
+    include 'application/views/index.html';
 ?>
 
